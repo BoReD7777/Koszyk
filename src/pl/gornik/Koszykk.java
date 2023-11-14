@@ -28,6 +28,46 @@ public class Koszykk {
         produkty.add(new Toy(" Samochodzik ",22,29,5));
         produkty.add(new Toy(" Planszówka ",23,55,12));
 
+            for(Produkt produkt:produkty){
+            System.out.println(produkt.displayProdukt());
+        }
+
+        while(true) {
+
+            while (true) {
+                System.out.println("Jeżeli chcesz zakonczyc program wpisz koniec");
+                Scanner scanner2 = new Scanner(System.in);
+                String choice = scanner2.nextLine();
+                if (choice.equals("koniec"))
+                    break;
+            }
+            int liczbaProduktow = 1;
+            Scanner scanner1 = new Scanner(System.in);
+
+            while (liczbaProduktow != 2){
+                System.out.printf("Podaj liczbe produktów który chcesz zakpic");
+                int wybor = scanner1.nextInt();
+                if(liczbaProduktow > wybor){
+
+                }
+                else{
+                    System.out.println("Nie wystarczająca liczba produktów w sklepie");
+                    break;
+                }
+            }
+
+
+        }
+
+
+        /*
+        for(Produkt produkt:produkty){
+            System.out.println(produkt.displayProdukt());
+        }
+
+        List<Koszykk>koszykk = new ArrayList<>();
+        Scanner scanner1 = new Scanner(System.in);
+        String nazwa = scanner1.nextLine();
 
        int i = 0;
        for(Produkt produkt : produkty) {
@@ -37,7 +77,10 @@ public class Koszykk {
        int liczbaProduktow = 1;
        while(liczbaProduktow != 2){
            System.out.println("Podaj liczbe produktów których chcesz zakupić");
+           scanner1.nextInt();
+           if(liczbaProduktow
        }
+       */
 
 
     }
